@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Feb 20 00:57:10 2024
+# Process ID: 16136
+# Current directory: E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl
+# Command line: xsim.exe -mode tcl -source {xsim.dir/FIR_filter/xsim_script.tcl}
+# Log file: E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/xsim.log
+# Journal file: E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl\xsim.jou
+# Running On: DESKTOP-S77R1VB, OS: Windows, CPU Frequency: 3700 MHz, CPU Physical cores: 12, Host memory: 17090 MB
+#-----------------------------------------------------------
+source xsim.dir/FIR_filter/xsim_script.tcl
+# xsim {FIR_filter} -autoloadwcfg -tclbatch {FIR_filter.tcl}
+Time resolution is 1 ps
+source FIR_filter.tcl
+## run all
+Note: simulation done!
+Time: 35976815 ns  Iteration: 1  Process: /apatb_FIR_filter_top/generate_sim_done_proc  File: E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 35976815 ns  Iteration: 1  Process: /apatb_FIR_filter_top/generate_sim_done_proc  File: E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter.autotb.vhd
+$finish called at time : 35976815 ns
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:40 . Memory (MB): peak = 239.207 ; gain = 0.000
+## quit
+INFO: xsimkernel Simulation Memory Usage: 29632 KB (Peak: 29632 KB), Simulation CPU Usage: 39093 ms
+INFO: [Common 17-206] Exiting xsim at Tue Feb 20 00:57:55 2024...

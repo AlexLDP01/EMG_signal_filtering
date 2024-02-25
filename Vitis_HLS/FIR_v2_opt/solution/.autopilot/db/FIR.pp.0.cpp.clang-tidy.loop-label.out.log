@@ -1,0 +1,30 @@
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:1345:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:1345:7: note: FIX-IT applied suggested code changes
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:2319:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:2319:5: note: FIX-IT applied suggested code changes
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:2333:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:2333:5: note: FIX-IT applied suggested code changes
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:2347:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:2347:5: note: FIX-IT applied suggested code changes
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:3946:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:3946:7: note: FIX-IT applied suggested code changes
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:5905:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+ for(int k = 0; k < 64/UR; k++)
+ ^~~
+ VITIS_LOOP_49_1: 
+E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp:5905:2: note: FIX-IT applied suggested code changes

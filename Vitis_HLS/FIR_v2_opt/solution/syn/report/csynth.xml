@@ -1,0 +1,707 @@
+<profile>
+    <ReportVersion>
+        <Version>2022.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z010i-clg225-1L</Part>
+        <TopModelName>FIR_filter</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.945</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>33</Best-caseLatency>
+            <Average-caseLatency>33</Average-caseLatency>
+            <Worst-caseLatency>33</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.330 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.330 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.330 us</Worst-caseRealTimeLatency>
+            <Interval-min>34</Interval-min>
+            <Interval-max>34</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>4</DSP>
+            <FF>3781</FF>
+            <LUT>1751</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>120</BRAM_18K>
+            <DSP>80</DSP>
+            <FF>35200</FF>
+            <LUT>17600</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>FIR_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>FIR_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>FIR_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>FIR_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>FIR_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>FIR_filter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>data_in_stream_TDATA</name>
+            <Object>data_in_stream</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>24</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>data_in_stream_TVALID</name>
+            <Object>data_in_stream</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>data_in_stream_TREADY</name>
+            <Object>data_in_stream</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>data_out_stream_TDATA</name>
+            <Object>data_out_stream</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>data_out_stream_TVALID</name>
+            <Object>data_out_stream</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>data_out_stream_TREADY</name>
+            <Object>data_out_stream</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>FIR_filter</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_FIR_filter_Pipeline_VITIS_LOOP_49_1_fu_207</InstName>
+                    <ModuleName>FIR_filter_Pipeline_VITIS_LOOP_49_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>207</ID>
+                    <BindInstances>add_ln49_fu_237_p2 mul_mul_24s_11ns_35_4_1_U2 rhs_fu_354_p2 ret_V_fu_373_p2 p_Val2_9_fu_387_p2 p_ZL9FIR_coefs_0_U</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_FIR_filter_Pipeline_VITIS_LOOP_49_11_fu_231</InstName>
+                    <ModuleName>FIR_filter_Pipeline_VITIS_LOOP_49_11</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>231</ID>
+                    <BindInstances>add_ln49_fu_237_p2 mul_mul_24s_13ns_37_4_1_U24 rhs_fu_354_p2 ret_V_fu_373_p2 p_Val2_7_fu_387_p2 p_ZL9FIR_coefs_1_U</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_FIR_filter_Pipeline_VITIS_LOOP_49_12_fu_254</InstName>
+                    <ModuleName>FIR_filter_Pipeline_VITIS_LOOP_49_12</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>254</ID>
+                    <BindInstances>add_ln49_fu_237_p2 mul_mul_24s_13ns_37_4_1_U45 rhs_fu_354_p2 ret_V_fu_373_p2 p_Val2_5_fu_387_p2 p_ZL9FIR_coefs_2_U</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_FIR_filter_Pipeline_VITIS_LOOP_49_13_fu_277</InstName>
+                    <ModuleName>FIR_filter_Pipeline_VITIS_LOOP_49_13</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>277</ID>
+                    <BindInstances>add_ln49_fu_237_p2 mul_mul_24s_11ns_35_4_1_U65 rhs_fu_354_p2 ret_V_fu_373_p2 p_Val2_3_fu_387_p2 p_ZL9FIR_coefs_3_U</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_FIR_filter_Pipeline_total_fu_300</InstName>
+                    <ModuleName>FIR_filter_Pipeline_total</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>300</ID>
+                    <BindInstances>add_ln58_fu_112_p2 ret_V_fu_143_p2 p_Val2_1_fu_157_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>FIR_filter_Pipeline_VITIS_LOOP_49_1</Name>
+            <Loops>
+                <VITIS_LOOP_49_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.118</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>22</Best-caseLatency>
+                    <Average-caseLatency>22</Average-caseLatency>
+                    <Worst-caseLatency>22</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.220 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.220 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.220 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>22</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_49_1>
+                        <Name>VITIS_LOOP_49_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>16</TripCount>
+                        <Latency>20</Latency>
+                        <AbsoluteTimeLatency>0.200 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_49_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>169</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>364</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln49_fu_237_p2" SOURCE="FIR_v2_opt/src/FIR.cpp:49" URAM="0" VARIABLE="add_ln49"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_49_1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_24s_11ns_35_4_1_U2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="rhs_fu_354_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:377" URAM="0" VARIABLE="rhs"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_373_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1347" URAM="0" VARIABLE="ret_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="p_Val2_9_fu_387_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:813" URAM="0" VARIABLE="p_Val2_9"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL9FIR_coefs_0_U" SOURCE="" URAM="0" VARIABLE="p_ZL9FIR_coefs_0"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>FIR_filter_Pipeline_VITIS_LOOP_49_11</Name>
+            <Loops>
+                <VITIS_LOOP_49_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.118</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>22</Best-caseLatency>
+                    <Average-caseLatency>22</Average-caseLatency>
+                    <Worst-caseLatency>22</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.220 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.220 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.220 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>22</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_49_1>
+                        <Name>VITIS_LOOP_49_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>16</TripCount>
+                        <Latency>20</Latency>
+                        <AbsoluteTimeLatency>0.200 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_49_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>173</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>367</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln49_fu_237_p2" SOURCE="FIR_v2_opt/src/FIR.cpp:49" URAM="0" VARIABLE="add_ln49"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_49_1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_24s_13ns_37_4_1_U24" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="rhs_fu_354_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:377" URAM="0" VARIABLE="rhs"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_373_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1347" URAM="0" VARIABLE="ret_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="p_Val2_7_fu_387_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:813" URAM="0" VARIABLE="p_Val2_7"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL9FIR_coefs_1_U" SOURCE="" URAM="0" VARIABLE="p_ZL9FIR_coefs_1"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>FIR_filter_Pipeline_VITIS_LOOP_49_12</Name>
+            <Loops>
+                <VITIS_LOOP_49_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.118</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>22</Best-caseLatency>
+                    <Average-caseLatency>22</Average-caseLatency>
+                    <Worst-caseLatency>22</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.220 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.220 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.220 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>22</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_49_1>
+                        <Name>VITIS_LOOP_49_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>16</TripCount>
+                        <Latency>20</Latency>
+                        <AbsoluteTimeLatency>0.200 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_49_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>173</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>367</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln49_fu_237_p2" SOURCE="FIR_v2_opt/src/FIR.cpp:49" URAM="0" VARIABLE="add_ln49"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_49_1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_24s_13ns_37_4_1_U45" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="rhs_fu_354_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:377" URAM="0" VARIABLE="rhs"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_373_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1347" URAM="0" VARIABLE="ret_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="p_Val2_5_fu_387_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:813" URAM="0" VARIABLE="p_Val2_5"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL9FIR_coefs_2_U" SOURCE="" URAM="0" VARIABLE="p_ZL9FIR_coefs_2"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>FIR_filter_Pipeline_VITIS_LOOP_49_13</Name>
+            <Loops>
+                <VITIS_LOOP_49_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.118</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>22</Best-caseLatency>
+                    <Average-caseLatency>22</Average-caseLatency>
+                    <Worst-caseLatency>22</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.220 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.220 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.220 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>22</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_49_1>
+                        <Name>VITIS_LOOP_49_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>16</TripCount>
+                        <Latency>20</Latency>
+                        <AbsoluteTimeLatency>0.200 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_49_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>169</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>364</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln49_fu_237_p2" SOURCE="FIR_v2_opt/src/FIR.cpp:49" URAM="0" VARIABLE="add_ln49"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_49_1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_24s_11ns_35_4_1_U65" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="rhs_fu_354_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:377" URAM="0" VARIABLE="rhs"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_373_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1347" URAM="0" VARIABLE="ret_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1" OPTYPE="add" PRAGMA="" RTLNAME="p_Val2_3_fu_387_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:813" URAM="0" VARIABLE="p_Val2_3"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="p_ZL9FIR_coefs_3_U" SOURCE="" URAM="0" VARIABLE="p_ZL9FIR_coefs_3"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>FIR_filter_Pipeline_total</Name>
+            <Loops>
+                <total/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.945</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>6</Best-caseLatency>
+                    <Average-caseLatency>6</Average-caseLatency>
+                    <Worst-caseLatency>6</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>60.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>60.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>60.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>6</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <total>
+                        <Name>total</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>4</Latency>
+                        <AbsoluteTimeLatency>40.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </total>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>38</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>228</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="total" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_fu_112_p2" SOURCE="FIR_v2_opt/src/FIR.cpp:58" URAM="0" VARIABLE="add_ln58"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="total" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_143_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:1347" URAM="0" VARIABLE="ret_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="total" OPTYPE="add" PRAGMA="" RTLNAME="p_Val2_1_fu_157_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h:813" URAM="0" VARIABLE="p_Val2_1"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>FIR_filter</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.945</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>33</Best-caseLatency>
+                    <Average-caseLatency>33</Average-caseLatency>
+                    <Worst-caseLatency>33</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.330 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.330 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.330 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>34</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>5</UTIL_DSP>
+                    <FF>3781</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>10</UTIL_FF>
+                    <LUT>1751</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>9</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_export output="E:/TFG_Workspace/HLS/IP_repo/"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="data_in_stream" index="0" direction="in" srcType="stream&lt;ap_fixed&lt;24, 1, AP_RND_CONV, AP_SAT, 1&gt;, 0&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="interface" interface="data_in_stream" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="data_out_stream" index="1" direction="out" srcType="stream&lt;ap_fixed&lt;32, 7, AP_RND_CONV, AP_SAT, 1&gt;, 0&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="interface" interface="data_out_stream" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">data_in_stream:data_out_stream</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="data_in_stream" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="24" portPrefix="data_in_stream_">
+            <ports>
+                <port>data_in_stream_TDATA</port>
+                <port>data_in_stream_TREADY</port>
+                <port>data_in_stream_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="data_in_stream"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="data_out_stream" type="axi4stream" busTypeName="axis" mode="master" dataWidth="32" portPrefix="data_out_stream_">
+            <ports>
+                <port>data_out_stream_TDATA</port>
+                <port>data_out_stream_TREADY</port>
+                <port>data_out_stream_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="data_out_stream"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table isCollapsed="0">
+                    <keys size="5">Interface, Register Mode, TDATA, TREADY, TVALID</keys>
+                    <column name="data_in_stream">both, 24, 1, 1, , , , , , , </column>
+                    <column name="data_out_stream">both, 32, 1, 1, , , , , , , </column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk, </column>
+                    <column name="ap_rst_n">reset, ap_rst_n, </column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="data_in_stream">in, stream&lt;ap_fixed&lt;24 1 AP_RND_CONV AP_SAT 1&gt; 0&gt;&amp;</column>
+                    <column name="data_out_stream">out, stream&lt;ap_fixed&lt;32 7 AP_RND_CONV AP_SAT 1&gt; 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="data_in_stream">data_in_stream, interface, , </column>
+                    <column name="data_out_stream">data_out_stream, interface, , </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <PragmaReport>
+        <Pragma type="interface" location="FIR_v2_opt/src/FIR.cpp:14" status="valid" parentFunction="fir_filter" variable="data_out_stream" isDirective="0" options="mode=axis register_mode=both depth=1 port=data_out_stream register"/>
+        <Pragma type="interface" location="FIR_v2_opt/src/FIR.cpp:15" status="valid" parentFunction="fir_filter" variable="data_in_stream" isDirective="0" options="mode=axis register_mode=both depth=1 port=data_in_stream register"/>
+        <Pragma type="array_partition" location="FIR_v2_opt/src/FIR.cpp:19" status="valid" parentFunction="fir_filter" variable="fir_shift_reg" isDirective="0" options="dim=1 type=complete variable=fir_shift_reg"/>
+        <Pragma type="unroll" location="FIR_v2_opt/src/FIR.cpp:21" status="valid" parentFunction="fir_filter" variable="" isDirective="0" options=""/>
+        <Pragma type="array_partition" location="FIR_v2_opt/src/FIR.cpp:40" status="valid" parentFunction="fir_filter" variable="FIR_coefs" isDirective="0" options="dim=1 factor=4 type=block variable=FIR_coefs"/>
+        <Pragma type="array_partition" location="FIR_v2_opt/src/FIR.cpp:44" status="valid" parentFunction="fir_filter" variable="acum" isDirective="0" options="dim=1 factor=4 type=block variable=acum"/>
+        <Pragma type="unroll" location="FIR_v2_opt/src/FIR.cpp:48" status="valid" parentFunction="fir_filter" variable="" isDirective="0" options="factor=4"/>
+        <Pragma type="pipeline" location="FIR_v2_opt/src/FIR.cpp:51" status="valid" parentFunction="fir_filter" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="FIR_v2_opt/src/FIR.cpp:60" status="valid" parentFunction="fir_filter" variable="" isDirective="0" options=""/>
+    </PragmaReport>
+</profile>
+

@@ -1,0 +1,72 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_FIR_filter_top glbl -Oenable_linking_all_libraries -prj FIR_filter.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s FIR_filter 
+Multi-threading is on. Using 10 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/AESL_axi_s_data_in_stream.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_s_data_in_stream'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/AESL_axi_s_data_out_stream.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_s_data_out_stream'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'apatb_FIR_filter_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter_FIR_filter_Pipeline_shift_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_FIR_filter_Pipeline_shift_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_0_ROM_AUTO_1R.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_0_ROM_AUTO_1R'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_1_ROM_AUTO_1R.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_1_ROM_AUTO_1R'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_2_ROM_AUTO_1R.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_2_ROM_AUTO_1R'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_3_ROM_AUTO_1R.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_3_ROM_AUTO_1R'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter_fir_shift_reg_V_RAM_AUTO_1R1W.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_fir_shift_reg_V_RAM_AUTO_1R1W'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter_flow_control_loop_pipe_sequential_init.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_flow_control_loop_pipe_sequential_init'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter_mul_mul_24s_18s_42_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_mul_mul_24s_18s_42_4_1_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_mul_mul_24s_18s_42_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter_mux_42_18_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_mux_42_18_1_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/sim/vhdl/FIR_filter_regslice_both.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_regslice_both'
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_regslice_both_w1'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling module work.glbl
+Compiling architecture rtl of entity xil_defaultlib.FIR_filter_fir_shift_reg_V_RAM_AUTO_1R1W [\FIR_filter_fir_shift_reg_V_RAM_...]
+Compiling architecture behav of entity xil_defaultlib.FIR_filter_flow_control_loop_pipe_sequential_init [fir_filter_flow_control_loop_pip...]
+Compiling architecture behav of entity xil_defaultlib.FIR_filter_FIR_filter_Pipeline_shift_reg [fir_filter_fir_filter_pipeline_s...]
+Compiling architecture rtl of entity xil_defaultlib.FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_0_ROM_AUTO_1R [fir_filter_fir_filter_pipeline_v...]
+Compiling architecture rtl of entity xil_defaultlib.FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_1_ROM_AUTO_1R [fir_filter_fir_filter_pipeline_v...]
+Compiling architecture rtl of entity xil_defaultlib.FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_2_ROM_AUTO_1R [fir_filter_fir_filter_pipeline_v...]
+Compiling architecture rtl of entity xil_defaultlib.FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1_p_ZL9FIR_coefs_3_ROM_AUTO_1R [fir_filter_fir_filter_pipeline_v...]
+Compiling architecture rtl of entity xil_defaultlib.FIR_filter_mux_42_18_1_1 [\FIR_filter_mux_42_18_1_1(id=1,d...]
+Compiling architecture behav of entity xil_defaultlib.FIR_filter_mul_mul_24s_18s_42_4_1_DSP48_0 [fir_filter_mul_mul_24s_18s_42_4_...]
+Compiling architecture arch of entity xil_defaultlib.FIR_filter_mul_mul_24s_18s_42_4_1 [\FIR_filter_mul_mul_24s_18s_42_4...]
+Compiling architecture behav of entity xil_defaultlib.FIR_filter_FIR_filter_Pipeline_VITIS_LOOP_31_1 [fir_filter_fir_filter_pipeline_v...]
+Compiling architecture behav of entity xil_defaultlib.FIR_filter_regslice_both [\FIR_filter_regslice_both(datawi...]
+Compiling architecture behav of entity xil_defaultlib.FIR_filter_regslice_both [fir_filter_regslice_both_default]
+Compiling architecture behav of entity xil_defaultlib.FIR_filter [fir_filter_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_data_in_stream [aesl_axi_s_data_in_stream_defaul...]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_data_out_stream [aesl_axi_s_data_out_stream_defau...]
+Compiling architecture behav of entity xil_defaultlib.apatb_fir_filter_top
+Built simulation snapshot FIR_filter

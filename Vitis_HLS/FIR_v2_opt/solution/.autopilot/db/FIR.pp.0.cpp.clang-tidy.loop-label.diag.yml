@@ -1,0 +1,58 @@
+---
+MainSourceFile:  'E:/ALEX/UNIVERSIDAD/TFG_Workspace/HLS/FIR_v2_opt/solution/.autopilot/db/FIR.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1211_1:  '
+    FileOffset:      1211
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp'
+        Offset:          52049
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1211_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp'
+        Offset:          259065
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp'
+        Offset:          259504
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp'
+        Offset:          259944
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1245_1:  '
+    FileOffset:      1245
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp'
+        Offset:          521281
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1245_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        'E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\src\FIR.cpp'
+    Replacements:    
+      - FilePath:        'E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\solution\.autopilot\db\FIR.pp.0.cpp'
+        Offset:          871287
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+...

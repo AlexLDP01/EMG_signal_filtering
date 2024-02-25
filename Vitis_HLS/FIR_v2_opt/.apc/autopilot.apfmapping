@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="FIR.cpp" path="E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\src\FIR.cpp"/>
+    <originFiles name="FIR.h" path="E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\src\FIR.h"/>
+    <originFiles name="config.h" path="E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\src\config.h"/>
+  </source>
+  <testbench>
+    <originFiles name="datain_real.dat" path="E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\tb\datain_real.dat"/>
+    <originFiles name="dataout_real.dat" path="E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\tb\dataout_real.dat"/>
+    <originFiles name="fir_test.cpp" path="E:\ALEX\UNIVERSIDAD\TFG_Workspace\HLS\FIR_v2_opt\tb\fir_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

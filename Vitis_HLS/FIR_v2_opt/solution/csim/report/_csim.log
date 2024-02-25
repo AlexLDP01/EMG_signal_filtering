@@ -1,0 +1,209 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../tb/fir_test.cpp in debug mode
+   Generating csim.exe
+diff = -4.72264e-008
+
+diff = -7.29797e-008
+
+diff = -1.66445e-007
+
+diff = -3.85779e-007
+
+diff = -6.25093e-007
+
+diff = -8.91257e-007
+
+diff = -1.20012e-006
+
+diff = -1.59246e-006
+
+diff = -2.04267e-006
+
+diff = -2.54731e-006
+
+diff = -3.16802e-006
+
+diff = -3.96263e-006
+
+diff = -4.86376e-006
+
+diff = -5.92333e-006
+
+diff = -7.2033e-006
+
+diff = -8.58861e-006
+
+diff = -1.00313e-005
+
+diff = -1.16013e-005
+
+diff = -1.32805e-005
+
+diff = -1.49857e-005
+
+diff = -1.67771e-005
+
+diff = -1.87152e-005
+
+diff = -2.06696e-005
+
+diff = -2.25706e-005
+
+diff = -2.44879e-005
+
+diff = -2.6409e-005
+
+diff = -2.8265e-005
+
+diff = -3.00277e-005
+
+diff = -3.1682e-005
+
+diff = -3.32439e-005
+
+diff = -3.47438e-005
+
+diff = -3.62143e-005
+
+diff = -3.76086e-005
+
+diff = -3.8888e-005
+
+diff = -4.00305e-005
+
+diff = -4.10764e-005
+
+diff = -4.18999e-005
+
+diff = -4.25758e-005
+
+diff = -4.31464e-005
+
+diff = -4.36936e-005
+
+diff = -4.42012e-005
+
+diff = -4.47114e-005
+
+diff = -4.52653e-005
+
+diff = -4.57531e-005
+
+diff = -4.61475e-005
+
+diff = -4.63892e-005
+
+diff = -4.64734e-005
+
+diff = -4.64833e-005
+
+diff = -4.64889e-005
+
+diff = -4.64426e-005
+
+diff = -4.61994e-005
+
+diff = -4.56855e-005
+
+diff = -4.49415e-005
+
+diff = -4.40936e-005
+
+diff = -4.30056e-005
+
+diff = -4.16885e-005
+
+diff = -4.00839e-005
+
+diff = -3.81998e-005
+
+diff = -3.60529e-005
+
+diff = -3.36462e-005
+
+diff = -3.09735e-005
+
+diff = -2.80264e-005
+
+diff = -2.46883e-005
+
+diff = -2.11413e-005
+
+diff = -1.67604e-005
+
+diff = -1.31698e-005
+
+diff = -8.03984e-006
+
+diff = -2.39825e-006
+
+diff = 2.01241e-006
+
+diff = 5.82117e-006
+
+diff = 9.83407e-006
+
+diff = 1.38458e-005
+
+diff = 1.70178e-005
+
+diff = 1.97001e-005
+
+diff = 2.25783e-005
+
+diff = 2.57622e-005
+
+diff = 2.72782e-005
+
+diff = 2.8909e-005
+
+diff = 3.06192e-005
+
+diff = 3.02527e-005
+
+diff = 2.88479e-005
+
+diff = 2.77009e-005
+
+diff = 2.5823e-005
+
+diff = 2.20265e-005
+
+diff = 1.87154e-005
+
+diff = 1.5863e-005
+
+diff = 1.07958e-005
+
+diff = 5.04553e-006
+
+diff = -1.28964e-007
+
+diff = -5.78796e-006
+
+diff = -1.23639e-005
+
+diff = -1.89006e-005
+
+diff = -2.5118e-005
+
+diff = -3.10021e-005
+
+diff = -3.61298e-005
+
+diff = -4.0618e-005
+
+diff = -4.51417e-005
+
+diff = -4.97251e-005
+
+diff = -5.38999e-005
+
+diff = -5.79377e-005
+
+
+ average diff = 2.52826e-005
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

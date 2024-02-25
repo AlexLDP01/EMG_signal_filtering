@@ -1,0 +1,261 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'FIR_filter'" level="0">
+<item name = "Date">Tue Feb 20 20:10:38 2024
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">FIR_v2_opt</item>
+<item name = "Solution">solution (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010i-clg225-1L</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.945 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">33, 33, 0.330 us, 0.330 us, 34, 34, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_1_fu_207">FIR_filter_Pipeline_VITIS_LOOP_49_1, 22, 22, 0.220 us, 0.220 us, 22, 22, no</column>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_11_fu_231">FIR_filter_Pipeline_VITIS_LOOP_49_11, 22, 22, 0.220 us, 0.220 us, 22, 22, no</column>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_12_fu_254">FIR_filter_Pipeline_VITIS_LOOP_49_12, 22, 22, 0.220 us, 0.220 us, 22, 22, no</column>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_13_fu_277">FIR_filter_Pipeline_VITIS_LOOP_49_13, 22, 22, 0.220 us, 0.220 us, 22, 22, no</column>
+<column name="grp_FIR_filter_Pipeline_total_fu_300">FIR_filter_Pipeline_total, 6, 6, 60.000 ns, 60.000 ns, 6, 6, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 6, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, 4, 722, 1690, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 55, -</column>
+<column name="Register">-, -, 3059, -, -</column>
+<specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 5, 10, 9, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_1_fu_207">FIR_filter_Pipeline_VITIS_LOOP_49_1, 0, 1, 169, 364, 0</column>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_11_fu_231">FIR_filter_Pipeline_VITIS_LOOP_49_11, 0, 1, 173, 367, 0</column>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_12_fu_254">FIR_filter_Pipeline_VITIS_LOOP_49_12, 0, 1, 173, 367, 0</column>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_13_fu_277">FIR_filter_Pipeline_VITIS_LOOP_49_13, 0, 1, 169, 364, 0</column>
+<column name="grp_FIR_filter_Pipeline_total_fu_300">FIR_filter_Pipeline_total, 0, 0, 38, 228, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state2_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state6">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">37, 7, 1, 7</column>
+<column name="data_in_stream_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="data_out_stream_TDATA_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_1">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_1_load_reg_1322">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_2">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_2_load_reg_1327">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_3">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_3_load_reg_1332">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_4">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_4_load_reg_1337">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_5">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_5_load_reg_1342">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_6">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_6_load_reg_1347">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_7">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_7_load_reg_1352">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_8">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_8_load_reg_1357">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_9">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_9_load_reg_1362">24, 0, 24, 0</column>
+<column name="FIR_filter_stream_stream_ap_fixed_32_7_4_0_1_0_fir_shift_reg_load_reg_1317">24, 0, 24, 0</column>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="data_in_stream_read_reg_1367">24, 0, 24, 0</column>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_11_fu_231_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_12_fu_254_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_13_fu_277_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_FIR_filter_Pipeline_VITIS_LOOP_49_1_fu_207_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_FIR_filter_Pipeline_total_fu_300_ap_start_reg">1, 0, 1, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_1">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_10">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_11">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_12">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_122_reg_1052">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_123_reg_1057">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_124_reg_1062">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_125_reg_1067">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_126_reg_1072">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_127_reg_1077">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_128_reg_1082">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_129_reg_1087">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_13">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_130_reg_1092">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_131_reg_1097">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_132_reg_1102">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_133_reg_1107">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_134_reg_1112">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_135_reg_1117">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_136_reg_1122">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_137_reg_1127">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_138_reg_1132">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_139_reg_1137">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_14">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_140_reg_1142">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_141_reg_1147">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_142_reg_1152">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_143_reg_1157">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_144_reg_1162">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_145_reg_1167">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_146_reg_1172">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_147_reg_1177">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_148_reg_1182">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_149_reg_1187">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_15">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_150_reg_1192">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_151_reg_1197">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_152_reg_1202">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_153_reg_1207">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_154_reg_1212">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_155_reg_1217">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_156_reg_1222">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_157_reg_1227">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_158_reg_1232">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_159_reg_1237">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_16">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_160_reg_1242">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_161_reg_1247">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_162_reg_1252">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_163_reg_1257">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_164_reg_1262">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_165_reg_1267">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_166_reg_1272">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_167_reg_1277">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_168_reg_1282">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_169_reg_1287">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_17">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_170_reg_1292">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_171_reg_1297">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_172_reg_1302">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_173_reg_1307">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_174_reg_1312">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_18">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_19">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_2">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_20">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_21">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_22">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_23">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_24">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_25">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_26">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_27">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_28">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_29">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_3">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_30">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_31">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_32">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_33">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_34">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_35">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_36">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_37">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_38">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_39">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_4">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_40">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_41">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_42">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_43">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_44">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_45">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_46">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_47">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_48">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_49">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_5">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_50">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_51">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_52">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_6">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_7">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_8">24, 0, 24, 0</column>
+<column name="p_ZZ10FIR_filterRN3hls6streamI8ap_fixedILi24ELi1EL9ap_q_mode4EL9ap_o_mode0ELi1EEL_9">24, 0, 24, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, FIR_filter, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, FIR_filter, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, FIR_filter, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, FIR_filter, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, FIR_filter, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, FIR_filter, return value</column>
+<column name="data_in_stream_TDATA">in, 24, axis, data_in_stream, pointer</column>
+<column name="data_in_stream_TVALID">in, 1, axis, data_in_stream, pointer</column>
+<column name="data_in_stream_TREADY">out, 1, axis, data_in_stream, pointer</column>
+<column name="data_out_stream_TDATA">out, 32, axis, data_out_stream, pointer</column>
+<column name="data_out_stream_TVALID">out, 1, axis, data_out_stream, pointer</column>
+<column name="data_out_stream_TREADY">in, 1, axis, data_out_stream, pointer</column>
+</table>
+</item>
+</section>
+</profile>
